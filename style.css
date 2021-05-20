@@ -1,9 +1,13 @@
+
+
 [data-tab-content] {
     display: none;
+    
 }
 
 .active[data-tab-content] {
     display: block;
+    
 }
 
 .tabs {
@@ -13,11 +17,14 @@
     margin: 0;
     padding: 0;
     border-bottom: 1px solid black;
+    
 }
 
 .tab {
   cursor: pointer;
   padding: 10px;
+  
+  
 }
 
 .tab.active {
@@ -31,13 +38,72 @@
 .tab-content {
   margin-left: 20px;
   margin-right: 20px;
+  
+  
 }
 
 
 .fa {
     width: 30px;
     height: 100px;
+    
+    
 }
+
+body.light-mode {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+   
+    color: var(--secondary-color);
+  }
+  button {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+  }
+
+
+body.dark-mode {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+   
+    color: var(--secondary-color);
+  }
+  button {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+  }
+
+ .moon { 
+    width: 30px;
+    cursor: pointer;
+    height: 30px
+}
+
+nav ul{
+    flex: 1;
+    text-align: right;
+}
+
+:root {
+    --primary-color: #edf2fc;
+    --secondary-color: #212121;
+}
+.dark-theme{
+  --font-color: #232142;
+  --bg-color: #ebedf2;
+} 
+/* 
+
+body {
+  line-height: 1.3;
+  color: var(--font-color);
+  background: var(--bg-color);
+}
+
+body.dark-theme {
+  --font-color: #ffffff;
+  --bg-color: #040223df;
+} */
 
 
 /* .hero{
@@ -123,8 +189,9 @@
 }
 
 .carousel-image {
-    width: 60vw;
-    height: auto;
+    margin: auto;
+    width: auto;
+    height: 300px;
 }
 
 .img-visible {
