@@ -4,12 +4,88 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     
     <title>Unreal Appeal</title>
     <link rel="stylesheet" href="style.css">
-    <!-- <script scr="script.js" defer></script> -->
+    <script scr="script.js" defer></script>
+    <script src="script.js" async></script>
     
 </head>
 <body>
+    <ul class="tabs">
+        <li data-tab-target="#home" class="active tab"><img src="images/home-solid.svg" class="fa">Home</li>
+        <li data-tab-target="#about" class="tab"><img src="images/user-tag-solid.svg" class="fa">About</li>
+        <li data-tab-target="#portfolio" class="tab"><img src="images/pencil-ruler-solid.svg" class="fa">Portfolio</li>
+        <li data-tab-target="#contact" class="tab"><img src="images/envelope-open-regular.svg" class="fa">Contact</li>
+    </ul>
+    
+    <div class="tab-content">
+        <div id="home" data-tab-content class="active">
+            <h1>Home</h1>
+            <p>This is the home</p>
+        </div>
+        <div id="about" data-tab-content>
+            <h1>About</h1>
+            <p>Some information about me</p>
+        </div>
+        <div id="portfolio" data-tab-content>
+            <h1>Portfolio</h1>
+            <p>Welcome to my portolio</p>
+        </div>
+        <div id="contact" data-tab-content>
+            <h1>Contact</h1>
+            <p>This is how you can contact me</p>
+        </div>
+    </div>
+    <!-- <div class ="hero">
+        <div class='btn-box'>
+            <button id="btn1" onclick="openHome()"><img src="images/home-solid.svg" class="fa">Home</button>
+            <button id="btn2" onclick="openAbout()"><img src="images/user-tag-solid.svg" class="fa"> About</button>
+            <button id="btn3" onclick="openPortfolio()"><img src="images/pencil-ruler-solid.svg" class="fa">Portfolio</button>
+            <button id="btn4" onclick="openContact()"><img src="images/envelope-open-regular.svg" class="fa">Contact</button>
+
+        </div>
+            <div id="content1" class="content">
+            <div class="content-left">
+                <h1>Welcome</h1>
+                <p>Something about me welcome</p>
+            </div>
+            <div class="content-right">
+                <img src="images/snake.jpg">
+            </div>
+        </div>
+
+        <div id="content2" class="content">
+            <div class="content-left">
+                <h1>Learn about me</h1>
+                <p>Something about me maybe</p>
+            </div>
+            <div class="content-right">
+                <img src="images/snake.jpg">
+            </div>
+
+        <div id="content3" class="content">
+            <div class="content-left">
+                <h1>portfolio</h1>
+                <p>Something about portfolio</p>
+            </div>
+            <div class="content-right">
+                <img src="images/snake.jpg">
+            </div>
+
+        <div  id="content4" class="content">
+            <div class="content-left">
+                <h1>Learn about contact me</h1>
+                <p>Something about contact me maybe</p>
+            </div>
+            <div class="content-right">
+                <img src="images/snake.jpg">
+            </div>
+    </div>
+
+    
+    
+
     <h1 class="h1">Unreal Appeal</h1>
     <section id="carousel-container">
         <img src="images/dogecoin.jpeg" alt="Doge" class="carousel-image img-visible" />
@@ -26,7 +102,6 @@
 
 
     </section>
-    
+     -->
 </body>
-<script src="script.js" defer></script>
 </html>

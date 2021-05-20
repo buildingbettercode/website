@@ -1,0 +1,25 @@
+<ul>
+        <li data-tab-target="#home">Home</li>
+        <li data-tab-target="#about">About</li>
+        <li data-tab-target="#portfolio">Portfolio</li>
+        <li data-tab-target="#contact">Contact</li>
+    </ul>
+    
+    <div class = "tab-content">
+        <div id ="home" data-tab-content class="active">
+            <h1>Home</h1>
+            <p>This is the home</p>
+        </div>
+        <div id="about" data-tab-content>
+            <h1>About</h1>
+            <p>Some information about me</p>
+        </div>
+        <div id="portfolio" data-tab-content>
+            <h1>Portfolio</h1>
+            <p>Welcome to my portolio</p>
+        </div>
+        <div id="contact" data-tab-content>
+            <h1>Contact</h1>
+            <p>This is how you can contact me</p>
+        </div>
+    </div>
