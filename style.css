@@ -1,4 +1,10 @@
+:root {
+    --primary-color: #edf2fc;
+    --secondary-color: #212121;
 
+  /* --font-color: #232142; 
+  --bg-color: #ebedf2;  */
+} 
 
 [data-tab-content] {
     display: none;
@@ -53,26 +59,26 @@
 body.light-mode {
   background-color: var(--secondary-color);
   color: var(--primary-color);
-   
+   {
     color: var(--secondary-color);
   }
   button {
     background-color: var(--primary-color);
     color: var(--secondary-color);
   }
-
+}
 
 body.dark-mode {
   background-color: var(--primary-color);
   color: var(--secondary-color);
-   
+   {
     color: var(--secondary-color);
   }
   button {
     background-color: var(--secondary-color);
     color: var(--primary-color);
   }
-
+}
  .moon { 
     width: 30px;
     cursor: pointer;

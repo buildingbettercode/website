@@ -20,14 +20,14 @@ tabs.forEach(tab => {
 const button = document.querySelector(".btn-toggle");
 var icon = document.getElementById("icon")
 
-const moon = document.getElementsByClassName("moon")
+// const moon = document.getElementsByClassName("moon")
 // console.log(moon)
 // moon.addEventListener("click", () => {
 //     document.body.classList.toggle("dark-mode");
 //     if (document.body.classList.contains("dark-mode")){
-//         moon.src = "images/sun.png";
+//         icon.src = "images/sun.png";
 //     }else{
-//         moon.src = "images/moon.png";
+//         icon.src = "images/moon.png";
 //     }
     
 // });
