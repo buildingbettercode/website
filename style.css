@@ -199,7 +199,7 @@ body.dark-theme {
 .carousel-image {
     margin: auto;
     width: auto;
-    height: 300px;
+    height: 200px;
     align-self: center;
 }
 
@@ -232,4 +232,26 @@ h1 {
 #control-container{
     /* align-self: right; */
     text-align: center;
+}
+
+.contact-section {
+  /* display: flex; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 80vh;
+  padding: 0 2rem;
+  background: var(--main-gray);
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: grey;
+  color: white;
+  text-align: center;
 }
