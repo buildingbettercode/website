@@ -87,7 +87,7 @@ body.dark-mode {
 
 nav ul{
     flex: 1;
-    text-align: right;
+    text-align: center;
 }
 
 :root {
@@ -98,14 +98,15 @@ nav ul{
   --font-color: #232142;
   --bg-color: #ebedf2;
 } 
-/* 
 
-body {
-  line-height: 1.3;
-  color: var(--font-color);
-  background: var(--bg-color);
+body { 
+    line-height: 1.3;
+    color: var(--font-color);
+    background: var(--bg-color);
+    align-self: center;
 }
 
+/* 
 body.dark-theme {
   --font-color: #ffffff;
   --bg-color: #040223df;
@@ -192,12 +193,14 @@ body.dark-theme {
 #carousel-container {
     display: flex;
     margin-bottom: 1em;
+    align-items: center;
 }
 
 .carousel-image {
     margin: auto;
     width: auto;
     height: 300px;
+    align-self: center;
 }
 
 .img-visible {
@@ -208,4 +211,21 @@ body.dark-theme {
 .img-hidden {
     display: none;
     
+}
+
+
+h1 {
+    text-align: center;
+}
+
+.tab-content {
+    text-align: center;
+}
+
+
+
+
+#control-container{
+    /* align-self: right; */
+    text-align: center;
 }

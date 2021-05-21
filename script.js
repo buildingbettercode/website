@@ -25,9 +25,9 @@ var icon = document.getElementById("icon")
 // moon.addEventListener("click", () => {
 //     document.body.classList.toggle("dark-mode");
 //     if (document.body.classList.contains("dark-mode")){
-//         icon.src = "images/sun.png";
+//         moon.src = "images/sun.png";
 //     }else{
-//         icon.src = "images/moon.png";
+//         moon.src = "images/moon.png";
 //     }
     
 // });
@@ -114,5 +114,3 @@ const pressLeft = () => {
 }
 
 leftButton.addEventListener("click", updateImageIndex);
-
-
