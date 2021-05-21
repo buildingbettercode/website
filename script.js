@@ -3,6 +3,17 @@ console.log("hello")
 const tabs = document.querySelectorAll('[data-tab-target]');
 const tabContents = document.querySelectorAll('[data-tab-content]');
 
+// const submit = document.getElementsByClassName("btn btn-xl")
+
+// submit.addEventListener(click, () => {
+//     alert("Thank you, your message has been received.")
+// }
+
+function myFunction() {
+    alert("Thank you, your message has been received!");
+}
+
+
 tabs.forEach(tab => {
     tab.addEventListener('click', () => {
         const target = document.querySelector(tab.dataset.tabTarget)
@@ -97,7 +108,7 @@ function updateVisibilities(){
 let carouselInterval;
 
 const startRunning = () => {
-    carouselInterval = setInterval(updateVisibilities, 2500);
+    carouselInterval = setInterval(updateVisibilities, 1000);
 }
 
 const stopRunning = () => {
