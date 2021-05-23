@@ -14,19 +14,19 @@ function myFunction() {
 }
 
 
-tabs.forEach(tab => {
-    tab.addEventListener('click', () => {
-        const target = document.querySelector(tab.dataset.tabTarget)
-        tabContents.forEach(tabContent => {
-            tabContent.classList.remove('active')
-        })
-        tabs.forEach(tab => {
-            tab.classList.remove('active')
-        })
-        tab.classList.add('active')
-        target.classList.add('active')
-    })
-})
+// tabs.forEach(tab => {
+//     tab.addEventListener('click', () => {
+//         const target = document.querySelector(tab.dataset.tabTarget)
+//         tabContents.forEach(tabContent => {
+//             tabContent.classList.remove('active')
+//         })
+//         tabs.forEach(tab => {
+//             tab.classList.remove('active')
+//         })
+//         tab.classList.add('active')
+//         target.classList.add('active')
+//     })
+// })
 
 const button = document.querySelector(".btn-toggle");
 var icon = document.getElementById("icon")
@@ -125,3 +125,19 @@ const pressLeft = () => {
 }
 
 leftButton.addEventListener("click", updateImageIndex);
+
+
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) { myIndex = 1 }
+    x[myIndex - 1].style.display = "block";
+    setTimeout(carousel, 4000);
+}
