@@ -436,7 +436,7 @@ img{
 @media screen and (max-width: 768px){
   .nav__menu{
     position: fixed;
-    top: -100%;
+    top: var(--header-height);
     left: 0;
     width: 100%;
     padding: 1.5rem 0 1rem;
