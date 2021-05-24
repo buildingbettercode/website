@@ -1,143 +1,93 @@
-console.log("hello")
+// const sections = document.querySelectorAll('section[id]')
 
-const tabs = document.querySelectorAll('[data-tab-target]');
-const tabContents = document.querySelectorAll('[data-tab-content]');
+// function scrollActive() {
+//     const scrollY = window.pageYOffset
 
-// const submit = document.getElementsByClassName("btn btn-xl")
+//     sections.forEach(current => {
+//         const sectionHeight = current.offsetHeight
+//         const sectionTop = current.offsetTop - 50;
+//         sectionId = current.getAttribute('id')
 
-// submit.addEventListener(click, () => {
-//     alert("Thank you, your message has been received.")
+//         if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+//             document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active-link')
+//         } else {
+//             document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active-link')
+//         }
+//     })
 // }
+// window.addEventListener('scroll', scrollActive)
 
-function myFunction() {
-    alert("Thank you, your message has been received!");
+/*==================== CHANGE BACKGROUND HEADER ====================*/
+// function scrollHeader() {
+//     const nav = document.getElementById('header')
+//     // When the scroll is greater than 200 viewport height, add the scroll-header class to the header tag
+//     if (this.scrollY >= 200) nav.classList.add('scroll-header'); else nav.classList.remove('scroll-header')
+// }
+// window.addEventListener('scroll', scrollHeader)
+
+/*==================== SHOW SCROLL TOP ====================*/
+// function scrollTop() {
+//     const scrollTop = document.getElementById('scroll-top');
+//     // When the scroll is higher than 560 viewport height, add the show-scroll class to the a tag with the scroll-top class
+//     if (this.scrollY >= 560) scrollTop.classList.add('show-scroll'); else scrollTop.classList.remove('show-scroll')
+// }
+// window.addEventListener('scroll', scrollTop)
+
+/*==================== DARK LIGHT THEME ====================*/
+const themeButton = document.getElementById('theme-button')
+const darkTheme = 'dark-theme'
+const iconTheme = 'bx-sun'
+
+// // Previously selected topic (if user selected)
+const selectedTheme = localStorage.getItem('selected-theme')
+const selectedIcon = localStorage.getItem('selected-icon')
+
+// We obtain the current theme that the interface has by validating the dark-theme class
+const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light'
+const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'bx-moon' : 'bx-sun'
+
+// We validate if the user previously chose a topic
+if (selectedTheme) {
+    // If the validation is fulfilled, we ask what the issue was to know if we activated or deactivated the dark
+    document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
+    themeButton.classList[selectedIcon === 'bx-moon' ? 'add' : 'remove'](iconTheme)
 }
 
+// Activate / deactivate the theme manually with the button
+themeButton.addEventListener('click', () => {
+    // Add or remove the dark / icon theme
+    document.body.classList.toggle(darkTheme)
+    themeButton.classList.toggle(iconTheme)
+    // We save the theme and the current icon that the user chose
+    localStorage.setItem('selected-theme', getCurrentTheme())
+    localStorage.setItem('selected-icon', getCurrentIcon())
+})
 
-// tabs.forEach(tab => {
-//     tab.addEventListener('click', () => {
-//         const target = document.querySelector(tab.dataset.tabTarget)
-//         tabContents.forEach(tabContent => {
-//             tabContent.classList.remove('active')
-//         })
-//         tabs.forEach(tab => {
-//             tab.classList.remove('active')
-//         })
-//         tab.classList.add('active')
-//         target.classList.add('active')
-//     })
-// })
-
-const button = document.querySelector(".btn-toggle");
-var icon = document.getElementById("icon")
-
-// const moon = document.getElementsByClassName("moon")
-// console.log(moon)
-// moon.addEventListener("click", () => {
-//     document.body.classList.toggle("dark-mode");
-//     if (document.body.classList.contains("dark-mode")){
-//         moon.src = "images/sun.png";
-//     }else{
-//         moon.src = "images/moon.png";
-//     }
-    
+/*==================== SCROLL REVEAL ANIMATION ====================*/
+// const sr = ScrollReveal({
+//     origin: 'top',
+//     distance: '30px',
+//     duration: 2000,
+//     reset: true
 // });
 
-function toggleDarkLight() {
-    var body = document.getElementById("body");
-    var currentClass = body.className;
-    body.className = currentClass == "dark-mode" ? "light-mode" : "dark-mode";
-    
-}
+// sr.reveal(`.home__data, .home__img,
+//             .about__data, .about__img,
+//             .services__content, .menu__content,
+//             .app__data, .app__img,
+//             .contact__data, .contact__button,
+//             .footer__content`, {
+//     interval: 200
+// })
 
-// function hello() {
-//     alert('Welcome!')
+
+// function myFunction() {
+//     alert("Thank you, your message has been received!");
 // }
-// hello()
 
-// console.log(hello)
+const toggleButton = document.getElementsByClassName('toggle-button')[0]
+const navbarLinks = document.getElementsByClassName('navbar-links')[0]
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-const carouselImages = Array.from(document.getElementsByClassName("carousel-image"));
-
-const startButton = document.querySelector(".controls-play")
-const stopButton = document.querySelector(".controls-pause")
-const leftButton = document.querySelector(".left")
-const rightButton = document.querySelector(".right")
-
-
-let currentImageIndex = 0;
-
-function updateImageIndex(){
-    let upperLimit = carouselImages.length - 1;
-
-    if (currentImageIndex === upperLimit){
-        currentImageIndex = 0;
-    }else {
-        currentImageIndex++
-    }
-};
-
-function updateVisibilities(){
-    updateImageIndex()
-    carouselImages.forEach((element, index)=>{
-        if (index === currentImageIndex) {
-            element.classList.remove("img-hidden");
-            element.classList.add("img-visible");
-        } else {
-            element.classList.remove("img-visible");
-            element.classList.add("img-hidden");
-        
-        }
-    })
-}
-
-let carouselInterval;
-
-const startRunning = () => {
-    carouselInterval = setInterval(updateVisibilities, 1000);
-}
-
-const stopRunning = () => {
-    clearInterval(carouselInterval)
-}
-
-startButton.addEventListener("click", startRunning);
-
-stopButton.addEventListener("click", stopRunning);
-
-
-const pressLeft = () => {
-    currentImageIndex = 0
-}
-
-leftButton.addEventListener("click", updateImageIndex);
-
-
-var myIndex = 0;
-carousel();
-
-function carousel() {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
-    }
-    myIndex++;
-    if (myIndex > x.length) { myIndex = 1 }
-    x[myIndex - 1].style.display = "block";
-    setTimeout(carousel, 4000);
-}
+toggleButton.addEventListener('click', () => {
+    navbarLinks.classList.toggle('active')
+})

@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>website</title>
-    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style.css">
     <!-- <script scr="script.js" defer></script> -->
-    <script src="script2.js" async></script>
+    <script src="script.js" async></script>
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
@@ -17,14 +17,39 @@
 <body>
 
     <!--========== HEADER ==========-->
+
     <header class="l-header" id="header">
-        <nav class="nav bd-container">
+    
+    <nav class="home ">
+        <div class="brand-title ">My website</div>
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="navbar-links nav bd-container menu-btn">
+            <ul>
+                <li class="nav__item menu-icon"><a href="#home" class="nav__link active-link "><i
+                            class="fas fa-home navicon "></i>Home</a></li>
+                <li class="nav__item"><a href="#about" class="nav__link"></i><i class="fas fa-user"></i>About</a>
+                </li>
+                <li class="nav__item"><a href="#application" class="nav__link"><i class="fas fa-pencil-ruler"></i>Application</a></li>
+                <li class="nav__item"><a href="#hobbies" class="nav__link"><i class="far fa-laugh"></i>Hobbies</a>
+                </li>
+                <li class="nav__item"><a href="#contact" class="nav__link"><i class="fas fa-address-book"></i>Contact </a></li>
+                <li><i class="fas fa-adjust" id="theme-button"></i></li>
+                     <div class="nav__toggle" id="nav-toggle">
+                        <i class='bx bx-menu'></i> 
+            </ul>
+        </div>
+    </nav>
+        <!-- <nav class="nav bd-container">
             <a href="#" class="nav__logo">My website</a>
 
-            <div class="nav__menu" id="nav-menu">
+            <div class="nav__menu menu-btn " id="nav-menu">
                 <ul class="nav__list">
-                    <li class="nav__item"><a href="#home" class="nav__link active-link"><i
-                                class="fas fa-home"></i>Home</a></li>
+                    <li class="nav__item menu-icon"><a href="#home" class="nav__link active-link"><i
+                                class="fas fa-home navicon "></i>Home</a></li>
                     <li class="nav__item"><a href="#about" class="nav__link"></i><i class="fas fa-user"></i>About</a>
                     </li>
                     <li class="nav__item"><a href="#application" class="nav__link"><i
@@ -32,16 +57,16 @@
                     <li class="nav__item"><a href="#hobbies" class="nav__link"><i class="far fa-laugh"></i>Hobbies</a>
                     </li>
                     <li class="nav__item"><a href="#contact" class="nav__link"><i
-                                class="fas fa-address-book"></i>Contact </a></li>
+                                class="fas fa-address-book"></i>Contact </a></li> -->
                     <!-- 
                     <li class="nav__item"><a href="#home"><img src="images/home-solid.svg">Home</a></a></li>
                     <li class="nav__item"><a href="#about"><img src="images/user-tag-solid.svg">About</a></li>
                     <li class="nav__item"><a href="#application"><img src="images/pencil-ruler-solid.svg">Application</a></li>
                     <li class="nav__item"><a href="#contact"><img src="images/envelope-open-regular.svg">Contact</a></li> -->
 
-                    <li><i class="fas fa-adjust" id="theme-button"></i></li>
+                    <!-- <li><i class="fas fa-adjust" id="theme-button"></i></li>
                     <div class="nav__toggle" id="nav-toggle">
-                        <i class='bx bx-menu'></i>
+                        <i class='bx bx-menu'></i> -->
                     <!-- <i class="fas fa-adjust"></i> -->
                 </ul>
             </div>
@@ -221,11 +246,7 @@
     </footer>
     </main>
 
-    <!--========== SCROLL REVEAL ==========-->
-    <script src="https://unpkg.com/scrollreveal"></script>
 
-    <!--========== MAIN JS ==========-->
-    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
