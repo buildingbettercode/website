@@ -71,7 +71,13 @@ body.dark-theme{
   --body-color: #1D2521;
   --container-color: #27302C;
 }
-
+.dark-toggle{
+  position: absolute;
+  top:50;
+  right:0;
+  padding-top: 25px;
+  padding-right: 50px;
+}
 /*========== Button Dark/Light ==========*/
 .change-theme{
   position: absolute;
@@ -154,6 +160,14 @@ img{
   background-color: var(--body-color);
 }
 
+#content {
+       position: relative;
+   }
+   #content img {
+       position: fixed;
+       top: 0px;
+       right: 0px;
+   }
 /*========== NAV ==========*/
 .nav{
   max-width: 1024px;
@@ -390,6 +404,7 @@ img{
 
 /*========== FOOTER ==========*/
 .footer__container{
+  color: rgb(127,128,128)
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   row-gap: 2rem;
   text-align: center;
@@ -397,13 +412,32 @@ img{
   align-items: center;
   position: relative;
   flex: auto;
+
+}
+
+.grid-container {
+  grid-template-columns: auto auto auto auto;
+  display: inline-grid;
+
+  padding: 10px;
+}
+
+.smaller-grid-container {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  display: inline-grid;
+
+  padding: 10px;
+}
+
+.contact-section {
+  justify-content: center;
 }
 
 .footer__logo{
   font-size: var(--h3-font-size);
   color: var(--first-color);
   font-weight: var(--font-semi-bold);
-  
+
 }
 
 .footer__description{
@@ -420,9 +454,10 @@ img{
 
 .footer__title{
   font-size: var(--h2-font-size);
+  font-family: var(--body-font);
   color: var(--title-color);
   margin-bottom: var(--mb-2);
-  
+
 }
 
 .footer__link{
@@ -440,6 +475,24 @@ img{
   font-size: var(--small-font-size);
   color: var(--text-color-light);
   margin-top: 3.5rem;
+}
+
+.form-control {
+  border-radius: 0;
+}
+
+.footer-container{
+  max-width: 960px;
+  width: calc(100% - 2rem);
+  margin-left: var(--mb-2);
+  margin-right: var(--mb-2);
+}
+
+.contact-container{
+  max-width: 960px;
+  width: calc(100% - 2rem);
+  margin-left: var(--mb-2);
+  margin-right: var(--mb-2);
 }
 
 /*========== MEDIA QUERIES ==========*/
@@ -550,8 +603,12 @@ img{
 /*  */
 #theme-button
 {
-    height: 2px;
-    width: 20px;
+    position: absolute;
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 30px;
+    margin-top: 40px;
+    float: right;
     text-align: right;
 }
 
@@ -730,3 +787,81 @@ a.toggle-button{
     }
 }
 
+#theme-button
+{
+    position: absolute;
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 30px;
+    margin-top: 40px;
+    float: right;
+    text-align: right;
+}
+
+/*========== slidshow ========== */
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+
+.dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
