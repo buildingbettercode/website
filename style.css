@@ -265,10 +265,12 @@ img{
   bottom: 1.5rem;
 }
 
+
 /*========== HOME ==========*/
 .home__container{
   height: calc(100vh - var(--header-height));
   align-content: center;
+  display: var(--z-fixed);
 }
 
 .home__title{
@@ -288,7 +290,7 @@ img{
   justify-self: center;
 }
 
-/*========== BUTTONS ==========*/
+/* ========== BUTTONS ========== */
 .button{
   display: inline-block;
   background-color: var(--first-color);
@@ -365,7 +367,6 @@ img{
   align-self: center;
   margin-bottom: var(--mb-2);
 }
-
 .menu__name, .menu__preci{
   font-weight: var(--font-semi-bold);
   color: var(--title-color);
@@ -400,6 +401,19 @@ img{
 
 .contact__description{
   margin-bottom: var(--mb-3);
+}
+.contact__button{
+    display: flex;
+    /* height: 200px; */
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    border-radius: 25px;
+    /* background: #73AD21; */
+    padding: 20px;
 }
 
 /*========== FOOTER ==========*/
@@ -529,6 +543,12 @@ img{
     margin: 0;
   }
 
+  width: 50px;
+    border-radius: 50%;
+    margin-right: 30px;
+    margin-top: 40px;
+    float: right;
+    text-align: right;
   .section{
     padding-top: 8rem;
   }
@@ -628,8 +648,8 @@ input[type=text], select, textarea {
   border-radius: 25px;
   /* background: #73AD21; */
   padding: 20px; 
-  width: 200px;
-  height: 150px; 
+  /* width: 200px; */
+  /* height: 150px;  */
 }
 }
 
@@ -695,6 +715,7 @@ body {
 }
 a.toggle-button{
     background: black;
+    position: fixed;
 }
 
 .navbar {
@@ -709,6 +730,7 @@ a.toggle-button{
 .brand-title {
     font-size: 1.5rem;
     margin: .5rem;
+    display: flex;
 }
 
 .navbar-links {

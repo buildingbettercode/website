@@ -85,6 +85,7 @@ function myFunction() {
     alert("Thank you, your message has been received!");
 }
 
+
 const toggleButton = document.getElementsByClassName('toggle-button')[0]
 const navbarLinks = document.getElementsByClassName('navbar-links')[0]
 
@@ -118,3 +119,4 @@ function showSlides(n) {
     slides[slideIndex - 1].style.display = "block";
 
 }
+
