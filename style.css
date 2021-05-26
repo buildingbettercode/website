@@ -267,10 +267,22 @@ img{
 
 
 /*========== HOME ==========*/
+#home{
+    margin-left: auto;
+  margin-right: auto;
+  max-width: 960px;
+  padding: .5rem ;
+}
+    
+}
 .home__container{
   height: calc(100vh - var(--header-height));
   align-content: center;
   display: var(--z-fixed);
+  text-align: center;
+  max-width: 960px;
+
+
 }
 
 .home__title{
@@ -288,6 +300,7 @@ img{
 .home__img{
   width: 300px;
   justify-self: center;
+  margin-left: var(--mb-2);
 }
 
 /* ========== BUTTONS ========== */
@@ -404,8 +417,9 @@ img{
 }
 .contact__button{
     display: flex;
-    /* height: 200px; */
+    /* height: 200p; */
     width: 100%;
+
     padding: 12px;
     border: 1px solid #ccc;
     margin-top: 6px;
@@ -887,3 +901,5 @@ a.toggle-button{
   animation-name: fade;
   animation-duration: 1.5s;
 }
+
+/*  */
