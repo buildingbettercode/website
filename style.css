@@ -109,10 +109,17 @@ a{
   text-decoration: none;
 }
 
+.center{
+    margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
 img{
   max-width: 100%;
   /* max-height: auto; */
 }
+
 img:hover{
       opacity: 0.3;
 }
@@ -124,7 +131,7 @@ img:hover{
 
 .section-title, .section-subtitle{
   text-align: center;
-  padding: 40px
+  /* padding: 40px */
 }
 
 .section-title{
