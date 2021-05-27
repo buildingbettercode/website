@@ -1,5 +1,3 @@
-
-
 /*===== GOOGLE FONTS =====*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
@@ -16,7 +14,7 @@
   --body-color: #8ecaca5b;
   --container-color: #FFFFFF;
 
-  /* ========== Font and typography ==========
+  ========== Font and typography ==========
   --body-font: 'Poppins', sans-serif;
   --biggest-font-size: 2.25rem;
   --h1-font-size: 1.5rem;
@@ -24,7 +22,7 @@
   --h3-font-size: 1rem;
   --normal-font-size: .938rem;
   --small-font-size: .813rem;
-  --smaller-font-size: .75rem; */
+  --smaller-font-size: .75rem;
 
   /*========== Font weight ==========*/
   --font-medium: 500;
