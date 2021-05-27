@@ -13,6 +13,7 @@ I made a menu bar, and quickly found it didn't work as desired on mobile, thus l
 I couldn't quite get my initial desired effect to bring up a side menu, so I had a thought that i could use the burger menu as a scroll to the top/reveal menu button, which I thought worked really well.
 
 On future projects I would like to impliment this.
+
 ///////////
 
 
@@ -27,16 +28,18 @@ Gregors live coding session taught me how to build this, unfortunaley we ran out
 
 I would have liked to added dots to be able to switch between the photos, and also to stylised the container and buttons better.
 
-Application website for Founders & Coders.
+///////////////
 
+
+This was my first website ever and I found it so much fun and cant wait to make more :)
 
 - [x] Apply!
 - [x] Finish
 - [x] Read Me
 - [x] About
 - [x] Find photos
-- [x] navigation bar
-- [x] 
+- [x] Navigation bar
+- [x] Footer
 - [x] All code is written by you
 - [x] No external libraries (e.g. no Bootstrap, React or GitHub Pages themes, but external fonts/icons are fine)
 - [x] Tells us about why you are applying for the programme
