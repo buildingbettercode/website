@@ -26,7 +26,7 @@ blossom over time makes it worth it.🌸
 
 Gregors live coding session taught me how to build this, unfortunaley we ran out of time and I had to learn how to make the previous/next button work, which was very fun to learn.
 
-I would have liked to added dots to be able to switch between the photos, and also to stylised the container and buttons better.
+I would have liked to have added dots to be able to switch between the photos, and also to have stylised the container and buttons better.
 
 ///////////////
 
