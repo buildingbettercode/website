@@ -113,6 +113,7 @@ a{
     margin-left: auto;
   margin-right: auto;
   display: block;
+  width: 270px;
 }
 
 img{
@@ -354,14 +355,14 @@ img:hover{
   justify-self: center;
 }
 
-/*========== SERVICES ==========*/
-.services__container{
+/*========== application ==========*/
+.application__container{
   row-gap: 2.5rem;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   
 }
 
-.services__content{
+.application__content{
   text-align: center;
   border-top: 5px solid #6b3737;
   border-left: 5px solid #ec4b4b;
@@ -369,20 +370,20 @@ img:hover{
   border-right:5px solid green;
 }
 
-.services__img{
+.application__img{
   width: 64px;
   height: 64px;
   fill: var(--first-color);
   margin-bottom: var(--mb-2);
 }
 
-.services__title{
+.application__title{
   font-size: var(--h3-font-size);
   color: var(--title-color);
   margin-bottom: var(--mb-1);
 }
 
-.services__description{
+.application__description{
   padding: 0 1.5rem;
 }
 
@@ -616,15 +617,7 @@ img:hover{
     margin: 0;
   }
 
-  width: 50px;
-    border-radius: 50%;
-    margin-right: 30px;
-    margin-top: 40px;
-    float: right;
-    text-align: right;
-  .section{
-    padding-top: 8rem;
-  }
+
 
   .nav{
     height: calc(var(--header-height) + 1.5rem);
@@ -650,7 +643,7 @@ img:hover{
     justify-items: center;
   }
 
-  .services__container,
+  .application__container,
   .menu__container{
     margin-top: var(--mb-6);
   }
